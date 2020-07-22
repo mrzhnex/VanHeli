@@ -2,10 +2,10 @@
 
 namespace VanHeli
 {
-    public class Settings : Plugin
+    public class MainSettings : Plugin
     {
-        public override string getName => "VanHeli";
-        public SetEvents SetEvents;
+        public override string getName => nameof(VanHeli);
+        public SetEvents SetEvents { get; set; }
 
         public override void OnEnable()
         {
